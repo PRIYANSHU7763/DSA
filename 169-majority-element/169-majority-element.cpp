@@ -3,11 +3,11 @@ public:
     int majorityElement(vector<int>& nums) {
         int count=0;
         int candidate=0;
-        for(int list:nums){
+        for(int i=0;i<nums.size();i++){
             if(count==0){
-                candidate=list;
+                candidate=nums[i];
                 }
-            if(candidate==list){
+            if(candidate==nums[i]){
                 count+=1;}
             
             else {
