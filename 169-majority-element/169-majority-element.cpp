@@ -4,14 +4,14 @@ public:
         int count=0;
         int candidate=0;
         for(int i=0;i<nums.size();i++){
-            if(count==0){
+            if(count==0){  
                 candidate=nums[i];
                 }
             if(candidate==nums[i]){
-                count+=1;}
+                count++;}
             
             else {
-                count-=1;
+                count--;
             }
             }
             return candidate;
