@@ -28,10 +28,11 @@ string firstRepChar(string s)
         v[s[i]-'a']++;
         if(v[s[i]-'a']>1){
             ans.push_back(s[i]);
-            return ans;
+            return ans;// pushing the ans in the string and returning,
+                      //  because function  is of string type.
             
         }
         
     }
-    return "-1";
+    return "-1";// if not found then  returning -1 as a string.
 }
