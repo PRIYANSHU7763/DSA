@@ -16,10 +16,10 @@ class Solution
     {
         unordered_map<char,bool>mp;
         for(int i=0;i<patt.size();i++){
-            mp[patt[i]]=true;
+            mp[patt[i]]=true;// to hash all the value of the patt array and mark their value as true.
         }
         for(int i=0;i<str.size();i++){
-            if(mp[str[i]]==true){
+            if(mp[str[i]]==true){// check if that particular element of str is ture, than return str index.
                 return i;
             }
         }
