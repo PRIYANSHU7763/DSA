@@ -20,11 +20,11 @@ class Solution
         for(int i=0;i<na;i++){
             
             fa[a[i]-'a']++;
-            fb[b[i]-'a']++;
+            fa[b[i]-'a']--;
             }
             
             for(int i=0;i<26;i++){
-                if(fa[i]!=fb[i]){
+                if(fa[i]!=0){
                     return 0;
                 }
             }
